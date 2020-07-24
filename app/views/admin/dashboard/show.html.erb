@@ -1,2 +1,13 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Welcome to the Admin Dashboard</h1>
+<hr/>
+
+<section
+        className="dashboard"
+      >
+        <div class="alert alert-success" role="alert" class="d-flex justify-content-between"> Number of unique Products: <span class="badge badge-default" style="font-size: 20px;"><%= @productCount %></span> 
+        <a class="btn btn-success" style="display: block; width: 25%; margin-left:auto; margin-right:0;" href="/admin/products" role="button">Go to Products</a>
+        </div>
+        <div class="alert alert-success" role="alert" > Total Product Categories: <span class="badge badge-default" style="font-size: 20px;"><%= @categoryCount %></span>
+        <a class="btn btn-success" style="display: block; width: 25%; margin-left:auto; margin-right:0;" href="/admin/products" role="button">Go to Categories</a>
+        </div>
+      </section>
